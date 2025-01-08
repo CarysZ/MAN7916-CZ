@@ -2,7 +2,7 @@
 
 ## Topic: Supervised Machine Learning Approaches in Text Analysis
 
-## Discussion Leader:
+## Discussion Leader: Carys
 
 ### Readings - Required
 

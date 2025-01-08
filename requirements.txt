@@ -6,3 +6,5 @@ nltk
 nodriver
 pandas
 pingouin
+requests
+spacy

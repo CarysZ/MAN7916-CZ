@@ -2,7 +2,7 @@
 
 ## Topic: Corpus Collection
 
-## Discussion Leader:
+## Discussion Leader: Xin
 
 ### Readings - Required
 
