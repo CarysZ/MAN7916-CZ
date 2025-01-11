@@ -1,0 +1,1 @@
+This is the directory where we will conduct our weekly in-class activities. What you put in this directory will not be synced with your GitHub repository.

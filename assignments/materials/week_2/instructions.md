@@ -46,7 +46,7 @@ The CSV file should have the following columns and look something like:
 
 With the second python file, create a script that accomplishes the following:
 
-1. Choose a three journals in your subfield of interest (e.g., OB, Strategy, Entrepreneurship)
+1. Choose three journals in your subfield of interest (e.g., OB, Strategy, Entrepreneurship)
 2. Use the CrossRef API to get a list every article they have published since Jan. 1, 2015. Retrieve the following fields:
    1. DOI
    2. Title
