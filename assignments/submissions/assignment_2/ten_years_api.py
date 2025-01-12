@@ -76,7 +76,7 @@ def build_date(date_parts):
 def parse_article(article):
     try:
         doi = article["DOI"]
-        title = article["title"][0]
+        title = article.get("title", ["N/A"])[0] if article.get("title") else "N/A"
         n_refs = article["references-count"]
         n_authors = len(article.get("author", []))
         n_cites = article["is-referenced-by-count"]
@@ -88,7 +88,7 @@ def parse_article(article):
             try:
                 soup = BeautifulSoup(raw_abstract, "html5lib")
                 abstract = soup.get_text().strip()
-                if not abstract:  # Handle case where BeautifulSoup parsing results in an empty string
+                if not abstract:  
                     abstract = "Abstract provided but could not be parsed"
             except Exception as e:
                 print(f"Error parsing abstract for article '{title}': {e}")
@@ -108,7 +108,7 @@ def parse_article(article):
             "pub_year": pub_date.year if pub_date else "N/A",
         }
     except Exception as e:
-        print(f"Error parsing article: {e}")
+        print(f"Error parsing article '{article.get('title', ['N/A'])[0]}' (DOI: {article.get('DOI', 'N/A')}): {e}")
         return None
 
 def process_journals(journal_list, from_date, until_date, rows_per_query, my_email):

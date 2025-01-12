@@ -1,8 +1,8 @@
 
 Correlation between publication year and citation count:
-Correlation coefficient: -0.3318584910482238
-P-value: 5.474999299219026e-09
+Correlation coefficient: -0.32684120382613624
+P-value: 6.734459372350688e-09
 
 ANOVA results for mean differences in citation count by journal:
-F-statistic: 7.64627368576748
-P-value: 0.0005802021875133002
+F-statistic: 8.141315760686094
+P-value: 0.00036123471518089453
