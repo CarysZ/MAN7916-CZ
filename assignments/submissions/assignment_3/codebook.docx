@@ -1,0 +1,28 @@
+Is This Company Truly "People-Oriented"?
+
+Unit of data collection: Each job ad collected from the LinkedIn job post page. The ads are all active and for full-time positions only. 
+
+Other coding instructions: 
+- Exclude ads missing key sections, such as job descriptions or qualifications. 
+- Code based on the ad’s text and tone without using external knowledge of the company (i.e., do not use the information you might have obtained in the news, social media, etc.).
+- If conflicting information is present (e.g., mentions of flexible hours alongside strict overtime requirements), prioritize the coder’s judgment on overall tone and emphasis. 
+
+Ad ID: Assign a unique identifier to each job ad.
+Job Title: Enter the title of the job as listed in the ad.
+Company: Enter the name of the company as listed in the ad.
+Coder ID: Indicate the individual who performed the coding.
+Date Coded: Record the date the coding was completed, in the format mm/dd/yyyy.
+
+1. Need to Work Irregular Hours: Explicit mention in the job ad that the employee is required to work outside standard business hours. 
+    1. Irregular hours are explicitly mentioned (e.g., occasionally work outside of regular business hours if needed).
+    2. Irregular hours are vaguely implied (e.g., need to be flexible with work hours).
+    3. Irregular hours are not mentioned or implied. 
+    4. The ad explicitly states that hours are strictly regular.
+
+2. Value Employee Well-being: The extent to which the job ad conveys a culture that values employee well-being. 
+    1. Strongly agree
+    2. Agree
+    3. Neutral
+    4. Disagree
+    5. Strongly disagree
+    99. Unable to tell
