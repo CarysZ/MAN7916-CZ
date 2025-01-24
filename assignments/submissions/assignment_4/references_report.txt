@@ -1,0 +1,142 @@
+Names-and-dates references:
+==================================================
+Agrawal et al., 2015
+Aguinis et al., 2013
+Ahlers et al., 2015
+Albiero et al., 2020
+Allison et al., 2015
+Allison et al., 2017
+Allport, 1954
+Anglin et al., 2022
+Arrow, 1973
+Azoulay et al., 2020
+Bakker & McMullen, 2023
+Bapna & Ganco, 2021
+Baron, 2008
+Becker, 1962
+Belleflamme et al., 2014
+Bingham & Eisenhardt, 2011
+Blackburn, 2015
+Blackwell et al., 2009
+Blanchard et al., 2022
+Bodenhausen, 1990
+Busenbark et al., 2022
+Calic et al., 2023
+Certo et al., 2016
+Chan et al., 2020
+Charles et al., 2001
+Chatman et al., 2022
+Chau & Ngai, 2010
+Chen, 2023
+Clough et al., 2019
+Colombo & Grilli, 2010
+Colombo et al., 2015
+Colombo, 2021
+Connell, 1987
+Cooper et al., 1994
+Correll & Benard, 2006
+Cuddy et al., 2005
+Cumming et al., 2020
+Cumming et al., 2021
+Davis et al., 2021
+Dimov & Shepherd, 2005
+Duan et al., 2020
+Dushnitsky et al., 2022
+Eddleston et al., 2016
+Edelman et al., 2018
+Eisenhardt & Sull, 2001
+Ertug et al., 2018
+Ertug et al., 2022
+Fisher et al., 2017
+Frank, 2000
+Franke et al., 2006
+Franke et al., 2008
+Friedline et al., 2015
+Gafni et al., 2021
+Galak et al., 2011
+Gamache et al., 2019
+Ganel et al., 2022
+Gielnik et al., 2018
+Gigerenzer & Gaissmaier, 2011
+Gigerenzer, 1996
+Greenberg & Mollick, 2017
+Grossman et al., 2012
+Groza et al., 2020
+Gupta et al., 2009
+Gupta et al., 2014
+Hailpern & Visintainer, 2003
+Heckman, 1979
+Hegde & Tumlinson, 2014
+Hippel, 1996
+Hmieleski & Sheppard, 2019
+Huang et al., 2021
+Hustedde & Pulver, 1992
+III et al., 1995
+Indiegogo, 2023
+Jennings & Brush, 2013
+Johnson et al., 2018
+Johnston et al., 2018
+Jones, 2010
+Jr et al., 2000
+Kautonen et al., 2010
+Kautonen et al., 2017
+Klepsch, 2023
+Klotz et al., 2014
+Kretschmer et al., 2022
+Kunze et al., 2021
+Lazarsfeld & Merton, 1954
+Li et al., 2017
+Martiarena, 2022
+Matthews et al., 2024
+Mattila et al., 2003
+McMullen & Shepherd, 2006
+McPherson et al., 2001
+McSweeney et al., 2022
+Minniti, 2006
+Mochkabadi & Volkmann, 2020
+Mollick & Nanda, 2016
+Mollick & Robb, 2016
+Mollick, 2014
+Murray et al., 2020
+Nelson & Miller, 1995
+Niehaves & Plattfaut, 2014
+Nielsen & Binder, 2021
+North & Fiske, 2012
+North & Fiske, 2015
+Obschonka et al., 2019
+Oliver et al., 2018
+Pelled et al., 2001
+Phelps, 1972
+Phillips et al., 2013
+Posthuma & Campion, 2009
+Scheaf et al., 2018
+Schweisfurth et al., 2023
+Seigner & Milanov, 2023
+Seigner et al., 2022
+Serwaah, 2022
+Shane, 2008
+Sharkey, 2016
+Shepherd et al., 2000
+Simeone & Kautonen, 2021
+Skirnevskiy et al., 2017
+Smith et al., 2014
+Soh, 2021
+Stam et al., 2014
+Stevenson et al., 2022
+Taigman et al., 2014
+Thies et al., 2016
+Tversky & Kahneman, 1974
+Unger et al., 2011
+Verbrugge, 1977
+Wesemann & Wincent, 2021
+Yan et al., 2023
+Younkin & Kuppuswamy, 2018
+Zenger & Lawrence, 1989
+Zhang, 2022
+Zhao et al., 2021
+
+Date-only references:
+==================================================
+Balachandra et al. (2019)
+Johnson et al. (2018)
+Kuppuswamy (2018)
