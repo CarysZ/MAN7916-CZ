@@ -1,5 +1,6 @@
 beautifulsoup4
 curl-cffi
+gensim
 html5lib
 ipykernel
 nltk
