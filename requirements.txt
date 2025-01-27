@@ -8,6 +8,9 @@ nodriver
 openai
 pandas
 pingouin
+pyLDAvis
 python-dotenv
 requests
 spacy
+tomotopy
+wordcloud

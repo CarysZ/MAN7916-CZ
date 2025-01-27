@@ -15,8 +15,8 @@
 ### Tutorials
 
 Complete the following tutorials before class:
-- [Tutorial: ]()
-- [Tutorial: ]()
+- [Tutorial: Word embeddings](../tutorials/word_embeddings.ipynb)
+- [Tutorial: Topic modeling](../tutorials/topic_models.ipynb)
 
 ### Readings - Choose Your Own Adventure (you are not restricted to this list)
 
