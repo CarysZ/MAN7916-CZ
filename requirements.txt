@@ -12,5 +12,6 @@ pyLDAvis
 python-dotenv
 requests
 spacy
+stanza
 tomotopy
 wordcloud
