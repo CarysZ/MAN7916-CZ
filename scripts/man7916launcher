@@ -1,0 +1,143 @@
+#!/bin/bash
+
+export OMP_NUM_THREADS=8
+
+YELLOW='\033[1;33m'
+GREEN='\033[1;32m'
+NC='\033[0m'
+
+# Articulate what this program does
+echo -e "\n\n${YELLOW}Welcome to the MAN 7916 launcher! This script will do the following:${NC}"
+echo " * Create a MAN7916 folder in your home directory "
+echo " * Create a Python virtual environment in that new folder"
+echo " * Install Python packages into that virtual environment"
+echo " * Load some needed files in the MAN7916 folder to help you complete the assignment"
+echo -e "\nYou can always remove the artifacts created by this script by deleting the MAN7916 folder and its contents\n\n"
+
+# Function to prompt the user
+prompt_user() {
+  echo -e "${GREEN}Do you want to continue? (Y/N):${NC} \c"
+  read user_input
+  case $user_input in
+    [Yy]* )
+      echo "Beginning installation. This may take a bit..."
+      echo "=================================================="
+      echo "========= Setting up directory structure ========="
+      echo "=================================================="
+      mkdir -p ~/MAN7916
+      cd ~/MAN7916
+      touch __init__.py
+      mkdir -p ./texts
+      mkdir -p ./dictionaries
+      mkdir -p ./models
+      mkdir -p ./models/nltk
+      mkdir -p ./output
+      echo "Done..."
+      echo ""
+      echo "=================================================="
+      echo "============== Loading Python Module ============="
+      echo "=================================================="
+      module load python/python-3.11.4-oneapi-2023.1.0
+      echo "Done..."
+      echo ""
+      if [ ! -d ".venv" ]; then
+        echo "=================================================="
+        echo "======= Creating virtual environment .venv ======="
+        echo "=================================================="
+	      python3 -m venv .venv
+        echo "Done..."
+        echo ""
+      else
+        echo "Virtual environment .venv already exists... skipping creation"
+      fi
+      echo "=================================================="
+      echo "========= Setting up Python Environment =========="
+      echo "=================================================="
+      source ~/MAN7916/.venv/bin/activate
+      pip3 install --upgrade pip wheel setuptools
+      pip3 install --upgrade nltk spacy[cuda12x] scattertext pyldavis matplotlib tomotopy xgboost scikit-learn tensorflow torch torchvision torchaudio --timeout 60
+      echo "Done..."
+      echo ""
+      echo "=================================================="
+      echo "======= Downloading Text and Model Corpora ======="
+      echo "============= This may take a while =============="
+      echo "=================================================="
+      wget -q http://www.catscanner.net/dictuploads/Tone_H08_Negativity.dict -O ./dictionaries/Tone_H08_Negativity.dict
+      wget -q http://www.catscanner.net/dictuploads/Tone_H08_Positivity.dict -O ./dictionaries/Tone_H08_Positivity.dict
+
+      TAR_FILE="./texts/aclImdb_v1.tar.gz"
+      EXTRACT_DIR="./texts/aclImdb/"
+      if [ ! -f "$TAR_FILE" ]; then
+        echo "Downloading aclImdb_v1.tar.gz..."
+        wget -q https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz -O "$TAR_FILE"
+      else
+        echo "File already exists: $TAR_FILE"
+      fi
+
+      if [ ! -d "$EXTRACT_DIR" ]; then
+        echo "Extracting aclImdb_v1.tar.gz..."
+        mkdir -p "$EXTRACT_DIR"
+        tar -xzf "$TAR_FILE" -C "$EXTRACT_DIR" --strip-components=1
+      else
+        echo "Data already extracted in: $EXTRACT_DIR"
+      fi
+
+      UNSUP_DIR="./texts/aclImdb/train/unsup/"
+
+      if [ ! -d "$UNSUP_DIR" ]; then
+        echo "unsup directory already removed... skipping..."
+      else
+        echo "Removing unneeded unsup directory: $UNSUP_DIR"
+        rm -r "$UNSUP_DIR"
+      fi
+
+      wget -q https://raw.githubusercontent.com/amckenny/MAN7916/main/scripts/man7916launcher.slurm -O ./man7916launcher.slurm
+      wget -q https://raw.githubusercontent.com/amckenny/MAN7916/main/scripts/ml_asst_setup.py -O ./ml_asst_setup.py
+      wget -q https://raw.githubusercontent.com/amckenny/MAN7916/main/scripts/run_sample_ml.py -O ./run_sample_ml.py
+      wget -q https://raw.githubusercontent.com/amckenny/MAN7916/main/scripts/dict_analysis.py -O ./dict_analysis.py
+      sbatch ./man7916launcher.slurm
+      echo "Done..."
+      echo ""
+
+      echo "========================================================="
+      echo "The Python environment has been successfully set up."
+      echo "The next thing that you need to do is to navigate to the "
+      echo "created folder, request an interactive session, and "
+      echo "run the Python files. To do this, you will need to run the "
+      echo "following command (ignoring the *):"
+      echo "* squeue -u <your username>"
+      echo "(Replace <your username> with your username)"
+      echo ""
+      echo "If the displayed table has a row for you, wait a few minutes "
+      echo "and run that line again - repeating until there is no row for "
+      echo "you. That row is the remnants of this setup script."
+      echo ""
+      echo "When you have no row in the above command, run the following: "
+      echo "* cd ~/MAN7916"
+      echo "* module load python/python-3.11.4-oneapi-2023.1.0"
+      echo "* source ./.venv/bin/activate"
+      echo "* srun -p normal -t 0-01:00:00 --gres=gpu:1 --pty bash"
+      echo "(You may have to wait a little bit, you just requested "
+      echo "a compute node on Newton)"
+      echo "* python3 run_sample_ml.py"
+      echo ""
+      echo "When you are done running the python code and are back to the "
+      echo "command prompt, run the following command to release the "
+      echo "compute node so that others can use it."
+      echo "* exit"
+      echo "========================================================="
+      ;;
+    [Nn]* )
+      echo "You chose to exit. No changes will be made. Goodbye!"
+      exit 0
+      ;;
+    * )
+      echo "Invalid input. Please enter Y or N."
+      prompt_user
+      ;;
+  esac
+}
+
+# Call the function
+prompt_user
+

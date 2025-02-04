@@ -2,6 +2,7 @@ beautifulsoup4
 curl-cffi
 gensim
 html5lib
+IProgress
 ipykernel
 nltk
 nodriver
@@ -11,6 +12,8 @@ pingouin
 pyLDAvis
 python-dotenv
 requests
+seaborn
+shap
 spacy
 stanza
 tomotopy

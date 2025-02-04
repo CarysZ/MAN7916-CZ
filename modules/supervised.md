@@ -10,13 +10,13 @@
 - Jurafsky, D., & Martin, J. H. (2024). Speech and language processing (3rd Edition). Pearson.
   - Read: [Chapter 4: Naive Bayes, Text Classification, and Sentiment](https://web.stanford.edu/~jurafsky/slp3/4.pdf) - Don't worry about the math, focus on the concepts.
   - Read: [Chapter 5: Logistic Regression](https://web.stanford.edu/~jurafsky/slp3/5.pdf) - Don't worry about the math, focus on the concepts.
-- Kobayashi, V. B., Mol, S. T., Berkers, H. A., Kismihok, G., & Den Hartog, D. N. (2018). Text classification for organizational researchers: A tutorial. Organizational research methods, 21(3), 766-799.
+- Kobayashi, V. B., Mol, S. T., Berkers, H. A., Kismihok, G., & Den Hartog, D. N. (2018). Text classification for organizational researchers: A tutorial. *Organizational Research Methods, 21*(3), 766-799.
 
 ### Tutorials
 
 Complete the following tutorials before class:
-- [Tutorial: ]()
-- [Tutorial: ]()
+- [Tutorial: Supervised Machine Learning: Regression and Classification](../tutorials/regression_classification.ipynb)
+- [Tutorial: Text Classification](../tutorials/text_classification.ipynb) <- Do this one second, it builds on the first one.
 
 ### Readings - Choose Your Own Adventure (you are not restricted to this list)
 
