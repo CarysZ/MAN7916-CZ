@@ -13,17 +13,8 @@
 - Fyffe, S., Lee, P., & Kaplan, S. (2024). “Transforming” personality scale development: Illustrating the potential of state-of-the-art natural language processing. *Organizational Research Methods, 27*(2), 265-300.
 - Speer, A. B., Perrotta, J., & Kordsmeyer, T. L. (2023). Taking It Easy: Off-the-Shelf Versus Fine-Tuned Supervised Modeling of Performance Appraisal Text. *Organizational Research Methods*.
 
-### Tutorials
-
-Complete the following tutorials before class:
-- [Tutorial: ]()
-- [Tutorial: ]()
-
-### Readings - Choose Your Own Adventure (you are not restricted to this list)
-
--
 
 
 ### Assignment
 
-[Assignment 7](../assignments/materials/week_7/instructions.md)
+[Assignment 6](../assignments/materials/week_6/instructions.md)
